@@ -3,20 +3,20 @@ package lehigh;
 import processing.core.PApplet;
 
 public class MovingBalls extends PApplet{
-    float []x=new float[10];
-    float []y=new float[10];
-    float speedx[]=new float[10];
-    float speedy[]=new float[10];
-    float color[][]=new float[10][10];
+    float []x=new float[100];
+    float []y=new float[100];
+    float speedx[]=new float[100];
+    float speedy[]=new float[100];
+    float color[][]=new float[100][100];
 
     public void settings(){
         size(500, 500);
-        for (int j = 0; j <10 ; j++) {
-            x[j]=(int)(random(50,450));
-            y[j]=(int)(random(50,450));
-            speedx[j]=(int)(random(1,5));
-            speedy[j]=(int)(random(1,5));
-            color[j]=new float[]{random(225),random(255),random(255)};
+        for (int i = 0; i <10 ; i++) {
+            x[i]=(int)(random(60,440));
+            y[i]=(int)(random(60,440));
+            speedx[i]=(int)(random(1,5));
+            speedy[i]=(int)(random(1,5));
+            color[i]=new float[]{random(225),random(255),random(255)};
         }
     }
 
